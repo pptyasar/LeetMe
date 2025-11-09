@@ -1,6 +1,6 @@
-# Complete List of All 54 LeetCode Problems
+# Complete List of All 57 LeetCode Problems
 
-## Easy Problems (28)
+## Easy Problems
 
 <details>
 <summary>1. Two Sum</summary>
@@ -779,7 +779,7 @@ public class Solution {
 ```
 </details>
 
-## Medium Problems (24)
+## Medium Problems 
 
 <details>
 <summary>3. Longest Substring Without Repeating Characters</summary>
@@ -1587,7 +1587,7 @@ class Solution {
 ```
 </details>
 
-## Hard Problems (2)
+## Hard Problems
 
 <details>
 <summary>23. Merge k Sorted Lists</summary>
@@ -1644,7 +1644,3 @@ class Solution {
 }
 ```
 </details>
-
----
-
-**Total: 54 Problems** (28 Easy + 24 Medium + 2 Hard)
