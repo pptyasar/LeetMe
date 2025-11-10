@@ -5,9 +5,9 @@
 <details>
 <summary>1. Two Sum</summary>
 
-**Description:** Given an array of integers and a target sum, find the indices of two numbers that add up to the target.
+Given an array of integers and a target sum, find the indices of two numbers that add up to the target.
 
-**Example:** Input: nums = [2,7,11,15], target = 9; Output: [0,1]
+Input: nums = [2,7,11,15], target = 9; Output: [0,1]
 
 ```java
 class Solution {
@@ -33,9 +33,9 @@ class Solution {
 <details>
 <summary>20. Valid Parentheses</summary>
 
-**Description:** Determine if a string containing only parentheses is valid, meaning every opening bracket has a matching closing bracket in the correct order.
+Determine if a string containing only parentheses is valid, meaning every opening bracket has a matching closing bracket in the correct order.
 
-**Example:** Input: s = "()"; Output: true
+Input: s = "()"; Output: true
 
 ```java
 class Solution {
@@ -78,9 +78,9 @@ class Solution {
 
 <summary>448. Find All Numbers Disappeared in an Array</summary>
 
-**Description:** Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
+Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
 
-**Example:** Input: nums = [4,3,2,7,8,2,3,1]; Output: [5,6]
+Input: nums = [4,3,2,7,8,2,3,1]; Output: [5,6]
 
 ```java
 class Solution {
@@ -112,9 +112,9 @@ class Solution {
 <details>
 <summary>21. Merge Two Sorted Lists</summary>
 
-**Description:** Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.
+Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.
 
-**Example:** Input: list1 = [1,2,4], list2 = [1,3,4]; Output: [1,1,2,3,4,4]
+Input: list1 = [1,2,4], list2 = [1,3,4]; Output: [1,1,2,3,4,4]
 
 ```java
 class Solution {
@@ -150,9 +150,9 @@ class Solution {
 <details>
 <summary>28. Find the Index of the First Occurrence in a String</summary>
 
-**Description:** Given two strings haystack and needle, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+Given two strings haystack and needle, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 
-**Example:** Input: haystack = "sadbutsad", needle = "sad"; Output: 0
+Input: haystack = "sadbutsad", needle = "sad"; Output: 0
 
 ```java
 class Solution {
@@ -192,9 +192,9 @@ class Solution {
 <details>
 <summary>70. Climbing Stairs</summary>
 
-**Description:** You are climbing a staircase. It takes n steps to reach the top. Each time you can climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+You are climbing a staircase. It takes n steps to reach the top. Each time you can climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 
-**Example:** Input: n = 2; Output: 2
+Input: n = 2; Output: 2
 
 ```java
 class Solution {
@@ -216,9 +216,9 @@ class Solution {
 <details>
 <summary>121. Best Time to Buy and Sell Stock</summary>
 
-**Description:** You are given an array prices where prices[i] is the price of a given stock on the ith day. You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+You are given an array prices where prices[i] is the price of a given stock on the ith day. You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 
-**Example:** Input: prices = [7,1,5,3,6,4]; Output: 5
+Input: prices = [7,1,5,3,6,4]; Output: 5
 
 ```java
 class Solution {
@@ -243,9 +243,9 @@ class Solution {
 <details>
 <summary>141. Linked List Cycle</summary>
 
-**Description:** Given head, the head of a linked list, determine if the linked list has a cycle in it.
+Given head, the head of a linked list, determine if the linked list has a cycle in it.
 
-**Example:** Input: head = [3,2,0,-4], pos = 1; Output: true
+Input: head = [3,2,0,-4], pos = 1; Output: true
 
 ```java
 public class Solution {
@@ -269,9 +269,9 @@ public class Solution {
 <details>
 <summary>203. Remove Linked List Elements</summary>
 
-**Description:** Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
+Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
 
-**Example:** Input: head = [1,2,6,3,4,5,6], val = 6; Output: [1,2,3,4,5]
+Input: head = [1,2,6,3,4,5,6], val = 6; Output: [1,2,3,4,5]
 
 ```java
 class Solution {
@@ -298,9 +298,9 @@ class Solution {
 <details>
 <summary>206. Reverse Linked List</summary>
 
-**Description:** Given the head of a singly linked list, reverse the list, and return the reversed list.
+Given the head of a singly linked list, reverse the list, and return the reversed list.
 
-**Example:** Input: head = [1,2,3,4,5]; Output: [5,4,3,2,1]
+Input: head = [1,2,3,4,5]; Output: [5,4,3,2,1]
 
 ```java
 class Solution {
@@ -323,9 +323,9 @@ class Solution {
 <details>
 <summary>643. Maximum Average Subarray I - Easy</summary>
 
-**Description:** You are given an integer array nums consisting of n elements, and an integer k. Find a contiguous subarray whose length is equal to k that has the maximum average value and return this value. Any answer with a calculation error less than 10^-5 will be accepted.
+You are given an integer array nums consisting of n elements, and an integer k. Find a contiguous subarray whose length is equal to k that has the maximum average value and return this value. Any answer with a calculation error less than 10^-5 will be accepted.
 
-**Example:** Input: nums = [1,12,-5,-6,50,3], k = 4; Output: 12.75
+Input: nums = [1,12,-5,-6,50,3], k = 4; Output: 12.75
 
 ```java
 class Solution {
@@ -352,9 +352,9 @@ class Solution {
 <details>
 <summary>217. Contains Duplicate</summary>
 
-**Description:** Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
-**Example:** Input: nums = [1,2,3,1]; Output: true
+Input: nums = [1,2,3,1]; Output: true
 
 ```java
 class Solution {
@@ -375,9 +375,9 @@ class Solution {
 <details>
 <summary>225. Implement Stack using Queues</summary>
 
-**Description:** Implement a last-in-first-out (LIFO) stack using only two queues. The implemented stack should support all the functions of a normal stack (push, top, pop, and empty).
+Implement a last-in-first-out (LIFO) stack using only two queues. The implemented stack should support all the functions of a normal stack (push, top, pop, and empty).
 
-**Example:** MyStack myStack = new MyStack(); myStack.push(1); myStack.push(2); myStack.top(); // return 2; myStack.pop(); // return 2; myStack.empty(); // return false;
+MyStack myStack = new MyStack(); myStack.push(1); myStack.push(2); myStack.top(); // return 2; myStack.pop(); // return 2; myStack.empty(); // return false;
 
 ```java
 class MyStack {
@@ -417,9 +417,9 @@ class MyStack {
 <details>
 <summary>234. Palindrome Linked List</summary>
 
-**Description:** Given the head of a singly linked list, return true if it is a palindrome.
+Given the head of a singly linked list, return true if it is a palindrome.
 
-**Example:** Input: head = [1,2,2,1]; Output: true
+Input: head = [1,2,2,1]; Output: true
 
 ```java
 class Solution {
@@ -470,9 +470,9 @@ class Solution {
 <details>
 <summary>268. Missing Number</summary>
 
-**Description:** Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
 
-**Example:** Input: nums = [3,0,1]; Output: 2
+Input: nums = [3,0,1]; Output: 2
 
 ```java
 class Solution {
@@ -496,9 +496,9 @@ class Solution {
 <details>
 <summary>303. Range Sum Query - Immutable</summary>
 
-**Description:** Given an integer array nums, handle multiple queries of the following type: Calculate the sum of the elements of nums between indices left and right inclusive where left <= right. Implement the NumArray class.
+Given an integer array nums, handle multiple queries of the following type: Calculate the sum of the elements of nums between indices left and right inclusive where left <= right. Implement the NumArray class.
 
-**Example:** NumArray numArray = new NumArray([-2, 0, 3, -5, 2, -1]); numArray.sumRange(0, 2); // return (-2) + 0 + 3 = 1; numArray.sumRange(2, 5); // return 3 + (-5) + 2 + (-1) = -1
+NumArray numArray = new NumArray([-2, 0, 3, -5, 2, -1]); numArray.sumRange(0, 2); // return (-2) + 0 + 3 = 1; numArray.sumRange(2, 5); // return 3 + (-5) + 2 + (-1) = -1
 
 ```java
 class NumArray {
@@ -522,9 +522,9 @@ class NumArray {
 <details>
 <summary>338. Counting Bits</summary>
 
-**Description:** Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
+Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
 
-**Example:** Input: n = 2; Output: [0,1,1]
+Input: n = 2; Output: [0,1,1]
 
 ```java
 class Solution {
@@ -552,9 +552,9 @@ class Solution {
 <details>
 <summary>344. Reverse String</summary>
 
-**Description:** Write a function that reverses a string. The input string is given as an array of characters s.
+Write a function that reverses a string. The input string is given as an array of characters s.
 
-**Example:** Input: s = ["h","e","l","l","o"]; Output: ["o","l","l","e","h"]
+Input: s = ["h","e","l","l","o"]; Output: ["o","l","l","e","h"]
 
 ```java
 class Solution {
@@ -578,9 +578,9 @@ class Solution {
 <details>
 <summary>459. Repeated Substring Pattern</summary>
 
-**Description:** Given a string s, check if it can be constructed by taking a substring of it and appending multiple copies of the substring together.
+Given a string s, check if it can be constructed by taking a substring of it and appending multiple copies of the substring together.
 
-**Example:** Input: s = "abab"; Output: true
+Input: s = "abab"; Output: true
 
 ```java
 class Solution {
@@ -595,9 +595,9 @@ class Solution {
 <details>
 <summary>485. Max Consecutive Ones</summary>
 
-**Description:** Given a binary array nums, return the maximum number of consecutive 1's in the array.
+Given a binary array nums, return the maximum number of consecutive 1's in the array.
 
-**Example:** Input: nums = [1,1,0,1,1,1]; Output: 3
+Input: nums = [1,1,0,1,1,1]; Output: 3
 
 ```java
 class Solution {
@@ -623,9 +623,9 @@ class Solution {
 <details>
 <summary>876. Middle of the Linked List</summary>
 
-**Description:** Given the head of a singly linked list, return the middle node of the linked list. If there are two middle nodes, return the second middle node.
+Given the head of a singly linked list, return the middle node of the linked list. If there are two middle nodes, return the second middle node.
 
-**Example:** Input: head = [1,2,3,4,5]; Output: [3,4,5]
+Input: head = [1,2,3,4,5]; Output: [3,4,5]
 
 ```java
 class Solution {
@@ -656,9 +656,9 @@ class Solution {
 <details>
 <summary>977. Squares of a Sorted Array</summary>
 
-**Description:** Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
+Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
 
-**Example:** Input: nums = [-4,-1,0,3,10]; Output: [0,1,9,16,100]
+Input: nums = [-4,-1,0,3,10]; Output: [0,1,9,16,100]
 
 ```java
 class Solution {
@@ -690,9 +690,9 @@ class Solution {
 <details>
 <summary>1200. Minimum Absolute Difference</summary>
 
-**Description:** Given an array of distinct integers arr, find all pairs of elements with the minimum absolute difference of any two elements. Return a list of pairs in ascending order.
+Given an array of distinct integers arr, find all pairs of elements with the minimum absolute difference of any two elements. Return a list of pairs in ascending order.
 
-**Example:** Input: arr = [4,2,1,3]; Output: [[1,2],[2,3],[3,4]]
+Input: arr = [4,2,1,3]; Output: [[1,2],[2,3],[3,4]]
 
 ```java
 class Solution {
@@ -725,9 +725,9 @@ class Solution {
 <details>
 <summary>1365. How Many Numbers Are Smaller Than the Current Number</summary>
 
-**Description:** Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i]. Return the answer in an array.
+Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i]. Return the answer in an array.
 
-**Example:** Input: nums = [8,1,2,2,3]; Output: [4,0,1,1,3]
+Input: nums = [8,1,2,2,3]; Output: [4,0,1,1,3]
 
 ```java
 class Solution {
@@ -754,9 +754,9 @@ class Solution {
 <details>
 <summary>1592. Rearrange Spaces Between Words</summary>
 
-**Description:** You are given a string text of words that are placed among some number of spaces. Each word consists of one or more lowercase English letters and are separated by at least one space. It's guaranteed that text contains at least one word. Rearrange the spaces so that there are an equal number of spaces between every pair of adjacent words and that number is maximized. If you cannot redistribute all the spaces equally, place the extra spaces at the end, meaning the returned string should be the same length as text. Return the string after rearranging the spaces.
+You are given a string text of words that are placed among some number of spaces. Each word consists of one or more lowercase English letters and are separated by at least one space. It's guaranteed that text contains at least one word. Rearrange the spaces so that there are an equal number of spaces between every pair of adjacent words and that number is maximized. If you cannot redistribute all the spaces equally, place the extra spaces at the end, meaning the returned string should be the same length as text. Return the string after rearranging the spaces.
 
-**Example:** Input: text = "  this   is  a sentence "; Output: "this   is   a   sentence"
+Input: text = "  this   is  a sentence "; Output: "this   is   a   sentence"
 
 ```java
 class Solution {
@@ -790,9 +790,9 @@ class Solution {
 <details>
 <summary>1668. Maximum Repeating Substring</summary>
 
-**Description:** For a string sequence, return the maximum k-repeating value of word in sequence. A word is k-repeating if word concatenated k times is a substring of sequence. Note that the word's maximum k-repeating value is the highest value k where word repeated k times is a substring of sequence. If word is not a substring of sequence, word's k-repeating value is 0.
+For a string sequence, return the maximum k-repeating value of word in sequence. A word is k-repeating if word concatenated k times is a substring of sequence. Note that the word's maximum k-repeating value is the highest value k where word repeated k times is a substring of sequence. If word is not a substring of sequence, word's k-repeating value is 0.
 
-**Example:** Input: sequence = "ababc", word = "ab"; Output: 2
+Input: sequence = "ababc", word = "ab"; Output: 2
 
 ```java
 class Solution {
@@ -813,9 +813,9 @@ class Solution {
 <details>
 <summary>1672. Richest Customer Wealth</summary>
 
-**Description:** You are given an m x n integer grid accounts where accounts[i][j] is the amount of money the i-th customer has in the j-th bank. Return the wealth that the richest customer has. A customer's wealth is the amount of money they have in all their bank accounts. The richest customer is the customer that has the maximum wealth.
+You are given an m x n integer grid accounts where accounts[i][j] is the amount of money the i-th customer has in the j-th bank. Return the wealth that the richest customer has. A customer's wealth is the amount of money they have in all their bank accounts. The richest customer is the customer that has the maximum wealth.
 
-**Example:** Input: accounts = [[1,2,3],[3,2,1]]; Output: 6
+Input: accounts = [[1,2,3],[3,2,1]]; Output: 6
 
 ```java
 class Solution {
@@ -837,9 +837,9 @@ class Solution {
 <details>
 <summary>2073. Time Needed to Buy Tickets</summary>
 
-**Description:** There are n people in a line queuing to buy tickets, where the 0th person is at the front of the line and the (n - 1)th person is at the back. You are given a 0-indexed integer array tickets of length n where the number tickets[i] represents the number of tickets that the ith person would like to buy. You are standing at position k. Each second, the first person in line will buy a ticket and the number of tickets they want to buy decreases by 1. If they have no more tickets to buy, they will leave the line. If there are people left in the line, the next person becomes the front. Return the time taken for you (i.e. the person at position k) to buy the last ticket you want to buy.
+There are n people in a line queuing to buy tickets, where the 0th person is at the front of the line and the (n - 1)th person is at the back. You are given a 0-indexed integer array tickets of length n where the number tickets[i] represents the number of tickets that the ith person would like to buy. You are standing at position k. Each second, the first person in line will buy a ticket and the number of tickets they want to buy decreases by 1. If they have no more tickets to buy, they will leave the line. If there are people left in the line, the next person becomes the front. Return the time taken for you (i.e. the person at position k) to buy the last ticket you want to buy.
 
-**Example:** Input: tickets = [2,3,2], k = 2; Output: 6
+Input: tickets = [2,3,2], k = 2; Output: 6
 
 ```java
 class Solution {
@@ -863,9 +863,9 @@ class Solution {
 <details>
 <summary>2423. Remove Letter To Equalize Frequency</summary>
 
-**Description:** You are given a 0-indexed string word, consisting of lowercase English letters. You need to select one index and remove the letter at that index from word so that the frequency of every letter present in word is equal. Return true if it is possible to do this, and false otherwise. The frequency of a letter x is the number of times it occurs in the string. You must remove exactly one letter and cannot choose to do nothing.
+You are given a 0-indexed string word, consisting of lowercase English letters. You need to select one index and remove the letter at that index from word so that the frequency of every letter present in word is equal. Return true if it is possible to do this, and false otherwise. The frequency of a letter x is the number of times it occurs in the string. You must remove exactly one letter and cannot choose to do nothing.
 
-**Example:** Input: word = "abcc"; Output: true
+Input: word = "abcc"; Output: true
 
 ```java
 public class Solution {
@@ -900,9 +900,9 @@ public class Solution {
 <details>
 <summary>3. Longest Substring Without Repeating Characters</summary>
 
-**Description:** Given a string s, find the length of the longest substring without repeating characters.
+Given a string s, find the length of the longest substring without repeating characters.
 
-**Example:** Input: s = "abcabcbb"; Output: 3
+Input: s = "abcabcbb"; Output: 3
 
 ```java
 class Solution {
@@ -927,9 +927,9 @@ class Solution {
 <details>
 <summary>15. 3Sum</summary>
 
-**Description:** Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0. Notice that the solution set must not contain duplicate triplets.
+Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0. Notice that the solution set must not contain duplicate triplets.
 
-**Example:** Input: nums = [-1,0,1,2,-1,-4]; Output: [[-1,-1,2],[-1,0,1]]
+Input: nums = [-1,0,1,2,-1,-4]; Output: [[-1,-1,2],[-1,0,1]]
 
 ```java
 class Solution {
@@ -970,9 +970,9 @@ class Solution {
 <details>
 <summary>36. Valid Sudoku</summary>
 
-**Description:** Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules: Each row must contain the digits 1-9 without repetition. Each column must contain the digits 1-9 without repetition. Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without repetition. Note: A Sudoku board (partially filled) could be valid but is not necessarily solvable. Only the filled cells need to be validated according to the mentioned rules.
+Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules: Each row must contain the digits 1-9 without repetition. Each column must contain the digits 1-9 without repetition. Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without repetition. Note: A Sudoku board (partially filled) could be valid but is not necessarily solvable. Only the filled cells need to be validated according to the mentioned rules.
 
-**Example:** Input: board = [["5","3",".",".","7",".",".",".","."],["6",".",".","1","9","5",".",".","."],[".","9","8",".",".",".",".","6","."],["8",".",".",".","6",".",".",".","3"],["4",".",".","8",".","3",".",".","1"],["7",".",".",".","2",".",".",".","6"],[".","6",".",".",".",".","2","8","."],[".",".",".","4","1","9",".",".","5"],[".",".",".",".","8",".",".","7","9"]]; Output: true
+Input: board = [["5","3",".",".","7",".",".",".","."],["6",".",".","1","9","5",".",".","."],[".","9","8",".",".",".",".","6","."],["8",".",".",".","6",".",".",".","3"],["4",".",".","8",".","3",".",".","1"],["7",".",".",".","2",".",".",".","6"],[".","6",".",".",".",".","2","8","."],[".",".",".","4","1","9",".",".","5"],[".",".",".",".","8",".",".","7","9"]]; Output: true
 
 ```java
 class Solution {
@@ -999,9 +999,9 @@ class Solution {
 <details>
 <summary>53. Maximum Subarray</summary>
 
-**Description:** Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
 
-**Example:** Input: nums = [-2,1,-3,4,-1,2,1,-5,4]; Output: 6
+Input: nums = [-2,1,-3,4,-1,2,1,-5,4]; Output: 6
 
 ```java
 class Solution {
@@ -1022,9 +1022,9 @@ class Solution {
 <details>
 <summary>54. Spiral Matrix</summary>
 
-**Description:** Given an m x n matrix, return all elements of the matrix in spiral order.
+Given an m x n matrix, return all elements of the matrix in spiral order.
 
-**Example:** Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]; Output: [1,2,3,6,9,8,7,4,5]
+Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]; Output: [1,2,3,6,9,8,7,4,5]
 
 ```java
 class Solution {
@@ -1067,9 +1067,9 @@ class Solution {
 <details>
 <summary>122. Best Time to Buy and Sell Stock II</summary>
 
-**Description:** You are given an integer array prices where prices[i] is the price of a given stock on the ith day. On each day, you may decide to buy and/or sell the stock. You can only hold at most one share of the stock at any time. However, you can buy it then immediately sell it on the same day. Find and return the maximum profit you can achieve.
+You are given an integer array prices where prices[i] is the price of a given stock on the ith day. On each day, you may decide to buy and/or sell the stock. You can only hold at most one share of the stock at any time. However, you can buy it then immediately sell it on the same day. Find and return the maximum profit you can achieve.
 
-**Example:** Input: prices = [7,1,5,3,6,4]; Output: 7
+Input: prices = [7,1,5,3,6,4]; Output: 7
 
 ```java
 class Solution {
@@ -1090,9 +1090,9 @@ class Solution {
 <details>
 <summary>128. Longest Consecutive Sequence</summary>
 
-**Description:** Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence. You must write an algorithm that runs in O(n) time.
+Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence. You must write an algorithm that runs in O(n) time.
 
-**Example:** Input: nums = [100,4,200,1,3,2]; Output: 4
+Input: nums = [100,4,200,1,3,2]; Output: 4
 
 ```java
 class Solution {
@@ -1126,9 +1126,9 @@ class Solution {
 <details>
 <summary>148. Sort List</summary>
 
-**Description:** Given the head of a linked list, return the list after sorting it in ascending order.
+Given the head of a linked list, return the list after sorting it in ascending order.
 
-**Example:** Input: head = [4,2,1,3]; Output: [1,2,3,4]
+Input: head = [4,2,1,3]; Output: [1,2,3,4]
 
 ```java
 class Solution {
@@ -1159,9 +1159,9 @@ class Solution {
 <details>
 <summary>150. Evaluate Reverse Polish Notation</summary>
 
-**Description:** Evaluate the value of an arithmetic expression in Reverse Polish Notation. Valid operators are +, -, *, and /. Each operand may be an integer or another expression. Note that division between two integers should truncate toward zero. It is guaranteed that the given RPN expression is always valid. That means the expression would always evaluate to a result, and there will not be any division by zero operation.
+Evaluate the value of an arithmetic expression in Reverse Polish Notation. Valid operators are +, -, *, and /. Each operand may be an integer or another expression. Note that division between two integers should truncate toward zero. It is guaranteed that the given RPN expression is always valid. That means the expression would always evaluate to a result, and there will not be any division by zero operation.
 
-**Example:** Input: tokens = ["2","1","+","3","*"]; Output: 9
+Input: tokens = ["2","1","+","3","*"]; Output: 9
 
 ```java
 class Solution {
@@ -1192,9 +1192,9 @@ class Solution {
 <details>
 <summary>152. Maximum Product Subarray</summary>
 
-**Description:** Given an integer array nums, find a contiguous non-empty subarray within the array that has the largest product, and return the product. The test cases are generated so that the answer will fit in a 32-bit integer.
+Given an integer array nums, find a contiguous non-empty subarray within the array that has the largest product, and return the product. The test cases are generated so that the answer will fit in a 32-bit integer.
 
-**Example:** Input: nums = [2,3,-2,4]; Output: 6
+Input: nums = [2,3,-2,4]; Output: 6
 
 ```java
 class Solution {
@@ -1222,9 +1222,9 @@ class Solution {
 <details>
 <summary>155. Min Stack</summary>
 
-**Description:** Design a stack that supports push, pop, top, and retrieving the minimum element in constant time. Implement the MinStack class: MinStack() initializes the stack object. void push(int val) pushes the element val onto the stack. void pop() removes the element on the top of the stack. int top() gets the top element of the stack. int getMin() retrieves the minimum element in the stack. You must implement a solution with O(1) time complexity for each function.
+Design a stack that supports push, pop, top, and retrieving the minimum element in constant time. Implement the MinStack class: MinStack() initializes the stack object. void push(int val) pushes the element val onto the stack. void pop() removes the element on the top of the stack. int top() gets the top element of the stack. int getMin() retrieves the minimum element in the stack. You must implement a solution with O(1) time complexity for each function.
 
-**Example:** MinStack minStack = new MinStack(); minStack.push(-2); minStack.push(0); minStack.push(-3); minStack.getMin(); // return -3; minStack.pop(); minStack.top(); // return 0; minStack.getMin(); // return -2
+MinStack minStack = new MinStack(); minStack.push(-2); minStack.push(0); minStack.push(-3); minStack.getMin(); // return -3; minStack.pop(); minStack.top(); // return 0; minStack.getMin(); // return -2
 
 ```java
 class MinStack {
@@ -1264,9 +1264,9 @@ class MinStack {
 <details>
 <summary>167. Two Sum II - Input Array Is Sorted</summary>
 
-**Description:** Given a 1-indexed array of integers numbers that is already sorted in non-decreasing order, find two numbers such that they add up to a specific target number. Let these two numbers be numbers[index1] and numbers[index2] where 1 <= index1 < index2 <= numbers.length. Return the indices of the two numbers, index1 and index2, added by one as an integer array [index1, index2] of length 2. The tests are generated such that there is exactly one solution. You may not use the same element twice. Your solution must use only constant extra space.
+Given a 1-indexed array of integers numbers that is already sorted in non-decreasing order, find two numbers such that they add up to a specific target number. Let these two numbers be numbers[index1] and numbers[index2] where 1 <= index1 < index2 <= numbers.length. Return the indices of the two numbers, index1 and index2, added by one as an integer array [index1, index2] of length 2. The tests are generated such that there is exactly one solution. You may not use the same element twice. Your solution must use only constant extra space.
 
-**Example:** Input: numbers = [2,7,11,15], target = 9; Output: [1,2]
+Input: numbers = [2,7,11,15], target = 9; Output: [1,2]
 
 ```java
 class Solution {
@@ -1299,9 +1299,9 @@ class Solution {
 <details>
 <summary>189. Rotate Array</summary>
 
-**Description:** Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
+Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
 
-**Example:** Input: nums = [1,2,3,4,5,6,7], k = 3; Output: [5,6,7,1,2,3,4]
+Input: nums = [1,2,3,4,5,6,7], k = 3; Output: [5,6,7,1,2,3,4]
 
 ```java
 class Solution {
@@ -1328,9 +1328,9 @@ class Solution {
 <details>
 <summary>209. Minimum Size Subarray Sum</summary>
 
-**Description:** Given an array of positive integers nums and a positive integer target, return the minimal length of a contiguous subarray [numsl, numsl+1, ..., numsr-1, numsr] of which the sum is greater than or equal to target. If there is no such subarray, return 0 instead.
+Given an array of positive integers nums and a positive integer target, return the minimal length of a contiguous subarray [numsl, numsl+1, ..., numsr-1, numsr] of which the sum is greater than or equal to target. If there is no such subarray, return 0 instead.
 
-**Example:**  
+ 
 Input: target = 7, nums = [2,3,1,2,4,3]  
 Output: 2
 
@@ -1358,9 +1358,9 @@ class Solution {
 <details>
 <summary>215. Kth Largest Element in an Array</summary>
 
-**Description:** Given an integer array nums and an integer k, return the kth largest element in the array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+Given an integer array nums and an integer k, return the kth largest element in the array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
 
-**Example:**  
+ 
 Input: nums = [3,2,1,5,6,4], k = 2  
 Output: 5
 
@@ -1387,9 +1387,9 @@ class Solution {
 <details>
 <summary>238. Product of Array Except Self</summary>
 
-**Description:** Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i]. The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer. You must write an algorithm that runs in O(n) time and without using the division operation.
+Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i]. The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer. You must write an algorithm that runs in O(n) time and without using the division operation.
 
-**Example:**  
+ 
 Input: nums = [1,2,3,4]  
 Output: [24,12,8,6]
 
@@ -1423,9 +1423,9 @@ class Solution {
 <details>
 <summary>347. Top K Frequent Elements</summary>
 
-**Description:** Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
 
-**Example:**  
+ 
 Input: nums = [1,1,1,2,2,3], k = 2  
 Output: [1,2]
 
@@ -1460,9 +1460,9 @@ class Solution {
 <details>
 <summary>621. Task Scheduler</summary>
 
-**Description:** Given a characters array tasks, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task is done in one unit of time. For each unit of time, the CPU could complete either one task or just be idle. However, there is a non-negative integer n that represents the cooldown period between two same tasks (the same letter in the array), that is that there must be at least n units of time between any two same tasks. Return the least number of units of time that the CPU will take to finish all the tasks.
+Given a characters array tasks, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task is done in one unit of time. For each unit of time, the CPU could complete either one task or just be idle. However, there is a non-negative integer n that represents the cooldown period between two same tasks (the same letter in the array), that is that there must be at least n units of time between any two same tasks. Return the least number of units of time that the CPU will take to finish all the tasks.
 
-**Example:**  
+ 
 Input: tasks = ["A","A","A","B","B","B"], n = 2  
 Output: 8
 
@@ -1500,9 +1500,9 @@ class Solution {
 <details>
 <summary>622. Design Circular Queue</summary>
 
-**Description:** Design your implementation of the circular queue. The circular queue is a linear data structure in which the operations are performed based on FIFO (First In First Out) principle and the last position is connected back to the first position to make a circle. It is also called "Ring Buffer". One of the benefits of the circular queue is that we can make use of the spaces in front of the queue. In a normal queue, once the queue becomes full, we cannot insert the next element even if there is a space in front of the queue. But using the circular queue, we can use the space to store new values.
+Design your implementation of the circular queue. The circular queue is a linear data structure in which the operations are performed based on FIFO (First In First Out) principle and the last position is connected back to the first position to make a circle. It is also called "Ring Buffer". One of the benefits of the circular queue is that we can make use of the spaces in front of the queue. In a normal queue, once the queue becomes full, we cannot insert the next element even if there is a space in front of the queue. But using the circular queue, we can use the space to store new values.
 
-**Example:**  
+ 
 MyCircularQueue circularQueue = new MyCircularQueue(3); // set the size to be 3  
 circularQueue.enQueue(1);  // return true  
 circularQueue.enQueue(2);  // return true  
@@ -1569,9 +1569,9 @@ class MyCircularQueue {
 <details>
 <summary>784. Letter Case Permutation</summary>
 
-**Description:** Given a string s, we can transform every letter individually to be lowercase or uppercase to create another string. Return a list of all possible strings we could create. Return the output in any order.
+Given a string s, we can transform every letter individually to be lowercase or uppercase to create another string. Return a list of all possible strings we could create. Return the output in any order.
 
-**Example:**  
+ 
 Input: s = "a1b2"  
 Output: ["a1b2","a1B2","A1b2","A1B2"]
 
@@ -1604,9 +1604,9 @@ class Solution {
 <details>
 <summary>845. Longest Mountain in Array</summary>
 
-**Description:** You may recall that an array arr is a mountain array if and only if: arr.length >= 3, there exists some index i (0-indexed) with 0 < i < arr.length - 1 such that: arr[0] < arr[1] < ... < arr[i - 1] < arr[i], arr[i] > arr[i + 1] > ... > arr[arr.length - 1]. Given an integer array arr, return the length of the longest mountain in arr. If there is no mountain, return 0.
+You may recall that an array arr is a mountain array if and only if: arr.length >= 3, there exists some index i (0-indexed) with 0 < i < arr.length - 1 such that: arr[0] < arr[1] < ... < arr[i - 1] < arr[i], arr[i] > arr[i + 1] > ... > arr[arr.length - 1]. Given an integer array arr, return the length of the longest mountain in arr. If there is no mountain, return 0.
 
-**Example:**  
+ 
 Input: arr = [2,1,4,7,3,2,5]  
 Output: 5
 
@@ -1641,9 +1641,9 @@ class Solution {
 <details>
 <summary>912. Sort an Array</summary>
 
-**Description:** Given an array of integers nums, sort the array in ascending order and return it. You must solve the problem without using any built-in functions in O(nlogn) time complexity and with the smallest space complexity possible.
+Given an array of integers nums, sort the array in ascending order and return it. You must solve the problem without using any built-in functions in O(nlogn) time complexity and with the smallest space complexity possible.
 
-**Example:**  
+ 
 Input: nums = [5,2,3,1]  
 Output: [1,2,3,5]
 
@@ -1691,9 +1691,9 @@ class Solution {
 <details>
 <summary>973. K Closest Points to Origin</summary>
 
-**Description:** Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane and an integer k, return the k closest points to the origin (0, 0). The distance between two points on the X-Y plane is the Euclidean distance (i.e., √(x1 - x2)2 + (y1 - y2)2). You may return the answer in any order. The answer is guaranteed to be unique (except for the order that it is in).
+Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane and an integer k, return the k closest points to the origin (0, 0). The distance between two points on the X-Y plane is the Euclidean distance (i.e., √(x1 - x2)2 + (y1 - y2)2). You may return the answer in any order. The answer is guaranteed to be unique (except for the order that it is in).
 
-**Example:**  
+ 
 Input: points = [[1,3],[-2,2]], k = 1  
 Output: [[-2,2]]
 
@@ -1740,9 +1740,9 @@ class Solution {
 <details>
 <summary>1004. Max Consecutive Ones III</summary>
 
-**Description:** Given a binary array nums and an integer k, return the maximum number of consecutive 1's in the array if you can flip at most k 0's.
+Given a binary array nums and an integer k, return the maximum number of consecutive 1's in the array if you can flip at most k 0's.
 
-**Example:**  
+ 
 Input: nums = [1,1,1,0,0,0,1,1,1,1,0], k = 2  
 Output: 6
 
@@ -1776,9 +1776,9 @@ class Solution {
 <details>
 <summary>1186. Maximum Subarray Sum with One Deletion</summary>
 
-**Description:** Given an array of integers, return the maximum sum for a non-empty subarray (contiguous elements) with at most one element deletion. In other words, you want to choose a subarray and optionally delete one element from it so that there is still at least one element left and the sum of the remaining elements is maximum possible.
+Given an array of integers, return the maximum sum for a non-empty subarray (contiguous elements) with at most one element deletion. In other words, you want to choose a subarray and optionally delete one element from it so that there is still at least one element left and the sum of the remaining elements is maximum possible.
 
-**Example:**  
+ 
 Input: arr = [1,-2,0,3]  
 Output: 4
 
@@ -1804,9 +1804,9 @@ class Solution {
 <details>
 <summary>2461. Maximum Sum of Distinct Subarrays With Length K</summary>
 
-**Description:** You are given an integer array nums and an integer k. Find the maximum subarray sum of all the subarrays of nums that meet the following conditions: The length of the subarray is k, and All the elements of the subarray are distinct. Return the maximum subarray sum of all the subarrays that meet the conditions. If no subarray meets the conditions, return 0.
+You are given an integer array nums and an integer k. Find the maximum subarray sum of all the subarrays of nums that meet the following conditions: The length of the subarray is k, and All the elements of the subarray are distinct. Return the maximum subarray sum of all the subarrays that meet the conditions. If no subarray meets the conditions, return 0.
 
-**Example:**  
+ 
 Input: nums = [1,5,4,2,9,9,9], k = 3  
 Output: 15
 
@@ -1846,9 +1846,9 @@ class Solution {
 <details>
 <summary>23. Merge k Sorted Lists</summary>
 
-**Description:** You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it.
+You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it.
 
-**Example:** Input: lists = [[1,4,5],[1,3,4],[2,6]]; Output: [1,1,2,3,4,4,5,6]
+Input: lists = [[1,4,5],[1,3,4],[2,6]]; Output: [1,1,2,3,4,4,5,6]
 
 ```java
 class Solution {
@@ -1881,9 +1881,9 @@ class Solution {
 <details>
 <summary>1392. Longest Happy Prefix</summary>
 
-**Description:** A string is called a happy prefix if is a non-empty prefix which is also a suffix (excluding itself). Given a string s, return the longest happy prefix of s. Return an empty string "" if no such prefix exists.
+A string is called a happy prefix if is a non-empty prefix which is also a suffix (excluding itself). Given a string s, return the longest happy prefix of s. Return an empty string "" if no such prefix exists.
 
-**Example:** Input: s = "level"; Output: "l"
+Input: s = "level"; Output: "l"
 
 ```java
 class Solution {
