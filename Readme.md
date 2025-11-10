@@ -5,6 +5,10 @@
 <details>
 <summary>1. Two Sum</summary>
 
+**Description:** Given an array of integers and a target sum, find the indices of two numbers that add up to the target.
+
+**Example:** Input: nums = [2,7,11,15], target = 9; Output: [0,1]
+
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -28,6 +32,10 @@ class Solution {
 
 <details>
 <summary>20. Valid Parentheses</summary>
+
+**Description:** Determine if a string containing only parentheses is valid, meaning every opening bracket has a matching closing bracket in the correct order.
+
+**Example:** Input: s = "()"; Output: true
 
 ```java
 class Solution {
@@ -70,6 +78,10 @@ class Solution {
 
 <summary>448. Find All Numbers Disappeared in an Array</summary>
 
+**Description:** Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
+
+**Example:** Input: nums = [4,3,2,7,8,2,3,1]; Output: [5,6]
+
 ```java
 class Solution {
     public List<Integer> findDisappearedNumbers(int[] nums) {
@@ -99,6 +111,10 @@ class Solution {
 
 <details>
 <summary>21. Merge Two Sorted Lists</summary>
+
+**Description:** Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.
+
+**Example:** Input: list1 = [1,2,4], list2 = [1,3,4]; Output: [1,1,2,3,4,4]
 
 ```java
 class Solution {
@@ -133,6 +149,10 @@ class Solution {
 
 <details>
 <summary>28. Find the Index of the First Occurrence in a String</summary>
+
+**Description:** Given two strings haystack and needle, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+**Example:** Input: haystack = "sadbutsad", needle = "sad"; Output: 0
 
 ```java
 class Solution {
@@ -172,6 +192,10 @@ class Solution {
 <details>
 <summary>70. Climbing Stairs</summary>
 
+**Description:** You are climbing a staircase. It takes n steps to reach the top. Each time you can climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+
+**Example:** Input: n = 2; Output: 2
+
 ```java
 class Solution {
     public int climbStairs(int n) {
@@ -191,6 +215,10 @@ class Solution {
 
 <details>
 <summary>121. Best Time to Buy and Sell Stock</summary>
+
+**Description:** You are given an array prices where prices[i] is the price of a given stock on the ith day. You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+
+**Example:** Input: prices = [7,1,5,3,6,4]; Output: 5
 
 ```java
 class Solution {
@@ -215,6 +243,10 @@ class Solution {
 <details>
 <summary>141. Linked List Cycle</summary>
 
+**Description:** Given head, the head of a linked list, determine if the linked list has a cycle in it.
+
+**Example:** Input: head = [3,2,0,-4], pos = 1; Output: true
+
 ```java
 public class Solution {
     public boolean hasCycle(ListNode head) {
@@ -236,6 +268,10 @@ public class Solution {
 
 <details>
 <summary>203. Remove Linked List Elements</summary>
+
+**Description:** Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
+
+**Example:** Input: head = [1,2,6,3,4,5,6], val = 6; Output: [1,2,3,4,5]
 
 ```java
 class Solution {
@@ -262,6 +298,10 @@ class Solution {
 <details>
 <summary>206. Reverse Linked List</summary>
 
+**Description:** Given the head of a singly linked list, reverse the list, and return the reversed list.
+
+**Example:** Input: head = [1,2,3,4,5]; Output: [5,4,3,2,1]
+
 ```java
 class Solution {
     public ListNode reverseList(ListNode head) {
@@ -282,6 +322,10 @@ class Solution {
 
 <details>
 <summary>643. Maximum Average Subarray I - Easy</summary>
+
+**Description:** You are given an integer array nums consisting of n elements, and an integer k. Find a contiguous subarray whose length is equal to k that has the maximum average value and return this value. Any answer with a calculation error less than 10^-5 will be accepted.
+
+**Example:** Input: nums = [1,12,-5,-6,50,3], k = 4; Output: 12.75
 
 ```java
 class Solution {
@@ -308,6 +352,10 @@ class Solution {
 <details>
 <summary>217. Contains Duplicate</summary>
 
+**Description:** Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+
+**Example:** Input: nums = [1,2,3,1]; Output: true
+
 ```java
 class Solution {
     public boolean containsDuplicate(int[] nums) {
@@ -326,6 +374,10 @@ class Solution {
 
 <details>
 <summary>225. Implement Stack using Queues</summary>
+
+**Description:** Implement a last-in-first-out (LIFO) stack using only two queues. The implemented stack should support all the functions of a normal stack (push, top, pop, and empty).
+
+**Example:** MyStack myStack = new MyStack(); myStack.push(1); myStack.push(2); myStack.top(); // return 2; myStack.pop(); // return 2; myStack.empty(); // return false;
 
 ```java
 class MyStack {
@@ -364,6 +416,10 @@ class MyStack {
 
 <details>
 <summary>234. Palindrome Linked List</summary>
+
+**Description:** Given the head of a singly linked list, return true if it is a palindrome.
+
+**Example:** Input: head = [1,2,2,1]; Output: true
 
 ```java
 class Solution {
@@ -414,6 +470,10 @@ class Solution {
 <details>
 <summary>268. Missing Number</summary>
 
+**Description:** Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+
+**Example:** Input: nums = [3,0,1]; Output: 2
+
 ```java
 class Solution {
     public int missingNumber(int[] nums) {
@@ -436,6 +496,10 @@ class Solution {
 <details>
 <summary>303. Range Sum Query - Immutable</summary>
 
+**Description:** Given an integer array nums, handle multiple queries of the following type: Calculate the sum of the elements of nums between indices left and right inclusive where left <= right. Implement the NumArray class.
+
+**Example:** NumArray numArray = new NumArray([-2, 0, 3, -5, 2, -1]); numArray.sumRange(0, 2); // return (-2) + 0 + 3 = 1; numArray.sumRange(2, 5); // return 3 + (-5) + 2 + (-1) = -1
+
 ```java
 class NumArray {
     int[] numArr;
@@ -457,6 +521,10 @@ class NumArray {
 
 <details>
 <summary>338. Counting Bits</summary>
+
+**Description:** Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
+
+**Example:** Input: n = 2; Output: [0,1,1]
 
 ```java
 class Solution {
@@ -484,6 +552,10 @@ class Solution {
 <details>
 <summary>344. Reverse String</summary>
 
+**Description:** Write a function that reverses a string. The input string is given as an array of characters s.
+
+**Example:** Input: s = ["h","e","l","l","o"]; Output: ["o","l","l","e","h"]
+
 ```java
 class Solution {
     public void reverseString(char[] s) {
@@ -506,6 +578,10 @@ class Solution {
 <details>
 <summary>459. Repeated Substring Pattern</summary>
 
+**Description:** Given a string s, check if it can be constructed by taking a substring of it and appending multiple copies of the substring together.
+
+**Example:** Input: s = "abab"; Output: true
+
 ```java
 class Solution {
     public boolean repeatedSubstringPattern(String s) {
@@ -518,6 +594,10 @@ class Solution {
 
 <details>
 <summary>485. Max Consecutive Ones</summary>
+
+**Description:** Given a binary array nums, return the maximum number of consecutive 1's in the array.
+
+**Example:** Input: nums = [1,1,0,1,1,1]; Output: 3
 
 ```java
 class Solution {
@@ -542,6 +622,10 @@ class Solution {
 
 <details>
 <summary>876. Middle of the Linked List</summary>
+
+**Description:** Given the head of a singly linked list, return the middle node of the linked list. If there are two middle nodes, return the second middle node.
+
+**Example:** Input: head = [1,2,3,4,5]; Output: [3,4,5]
 
 ```java
 class Solution {
@@ -572,6 +656,10 @@ class Solution {
 <details>
 <summary>977. Squares of a Sorted Array</summary>
 
+**Description:** Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
+
+**Example:** Input: nums = [-4,-1,0,3,10]; Output: [0,1,9,16,100]
+
 ```java
 class Solution {
     public int[] sortedSquares(int[] nums) {
@@ -601,6 +689,10 @@ class Solution {
 
 <details>
 <summary>1200. Minimum Absolute Difference</summary>
+
+**Description:** Given an array of distinct integers arr, find all pairs of elements with the minimum absolute difference of any two elements. Return a list of pairs in ascending order.
+
+**Example:** Input: arr = [4,2,1,3]; Output: [[1,2],[2,3],[3,4]]
 
 ```java
 class Solution {
@@ -633,6 +725,10 @@ class Solution {
 <details>
 <summary>1365. How Many Numbers Are Smaller Than the Current Number</summary>
 
+**Description:** Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i]. Return the answer in an array.
+
+**Example:** Input: nums = [8,1,2,2,3]; Output: [4,0,1,1,3]
+
 ```java
 class Solution {
     public int[] smallerNumbersThanCurrent(int[] nums) {
@@ -657,6 +753,10 @@ class Solution {
 
 <details>
 <summary>1592. Rearrange Spaces Between Words</summary>
+
+**Description:** You are given a string text of words that are placed among some number of spaces. Each word consists of one or more lowercase English letters and are separated by at least one space. It's guaranteed that text contains at least one word. Rearrange the spaces so that there are an equal number of spaces between every pair of adjacent words and that number is maximized. If you cannot redistribute all the spaces equally, place the extra spaces at the end, meaning the returned string should be the same length as text. Return the string after rearranging the spaces.
+
+**Example:** Input: text = "  this   is  a sentence "; Output: "this   is   a   sentence"
 
 ```java
 class Solution {
@@ -690,6 +790,10 @@ class Solution {
 <details>
 <summary>1668. Maximum Repeating Substring</summary>
 
+**Description:** For a string sequence, return the maximum k-repeating value of word in sequence. A word is k-repeating if word concatenated k times is a substring of sequence. Note that the word's maximum k-repeating value is the highest value k where word repeated k times is a substring of sequence. If word is not a substring of sequence, word's k-repeating value is 0.
+
+**Example:** Input: sequence = "ababc", word = "ab"; Output: 2
+
 ```java
 class Solution {
     public int maxRepeating(String sequence, String word) {
@@ -708,6 +812,10 @@ class Solution {
 
 <details>
 <summary>1672. Richest Customer Wealth</summary>
+
+**Description:** You are given an m x n integer grid accounts where accounts[i][j] is the amount of money the i-th customer has in the j-th bank. Return the wealth that the richest customer has. A customer's wealth is the amount of money they have in all their bank accounts. The richest customer is the customer that has the maximum wealth.
+
+**Example:** Input: accounts = [[1,2,3],[3,2,1]]; Output: 6
 
 ```java
 class Solution {
@@ -728,6 +836,10 @@ class Solution {
 
 <details>
 <summary>2073. Time Needed to Buy Tickets</summary>
+
+**Description:** There are n people in a line queuing to buy tickets, where the 0th person is at the front of the line and the (n - 1)th person is at the back. You are given a 0-indexed integer array tickets of length n where the number tickets[i] represents the number of tickets that the ith person would like to buy. You are standing at position k. Each second, the first person in line will buy a ticket and the number of tickets they want to buy decreases by 1. If they have no more tickets to buy, they will leave the line. If there are people left in the line, the next person becomes the front. Return the time taken for you (i.e. the person at position k) to buy the last ticket you want to buy.
+
+**Example:** Input: tickets = [2,3,2], k = 2; Output: 6
 
 ```java
 class Solution {
@@ -750,6 +862,10 @@ class Solution {
 
 <details>
 <summary>2423. Remove Letter To Equalize Frequency</summary>
+
+**Description:** You are given a 0-indexed string word, consisting of lowercase English letters. You need to select one index and remove the letter at that index from word so that the frequency of every letter present in word is equal. Return true if it is possible to do this, and false otherwise. The frequency of a letter x is the number of times it occurs in the string. You must remove exactly one letter and cannot choose to do nothing.
+
+**Example:** Input: word = "abcc"; Output: true
 
 ```java
 public class Solution {
@@ -784,6 +900,10 @@ public class Solution {
 <details>
 <summary>3. Longest Substring Without Repeating Characters</summary>
 
+**Description:** Given a string s, find the length of the longest substring without repeating characters.
+
+**Example:** Input: s = "abcabcbb"; Output: 3
+
 ```java
 class Solution {
     public int lengthOfLongestSubstring(String s) {
@@ -806,6 +926,10 @@ class Solution {
 
 <details>
 <summary>15. 3Sum</summary>
+
+**Description:** Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0. Notice that the solution set must not contain duplicate triplets.
+
+**Example:** Input: nums = [-1,0,1,2,-1,-4]; Output: [[-1,-1,2],[-1,0,1]]
 
 ```java
 class Solution {
@@ -846,6 +970,10 @@ class Solution {
 <details>
 <summary>36. Valid Sudoku</summary>
 
+**Description:** Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules: Each row must contain the digits 1-9 without repetition. Each column must contain the digits 1-9 without repetition. Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without repetition. Note: A Sudoku board (partially filled) could be valid but is not necessarily solvable. Only the filled cells need to be validated according to the mentioned rules.
+
+**Example:** Input: board = [["5","3",".",".","7",".",".",".","."],["6",".",".","1","9","5",".",".","."],[".","9","8",".",".",".",".","6","."],["8",".",".",".","6",".",".",".","3"],["4",".",".","8",".","3",".",".","1"],["7",".",".",".","2",".",".",".","6"],[".","6",".",".",".",".","2","8","."],[".",".",".","4","1","9",".",".","5"],[".",".",".",".","8",".",".","7","9"]]; Output: true
+
 ```java
 class Solution {
     public boolean isValidSudoku(char[][] board) {
@@ -871,6 +999,10 @@ class Solution {
 <details>
 <summary>53. Maximum Subarray</summary>
 
+**Description:** Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+
+**Example:** Input: nums = [-2,1,-3,4,-1,2,1,-5,4]; Output: 6
+
 ```java
 class Solution {
     public int maxSubArray(int[] nums) {
@@ -889,6 +1021,10 @@ class Solution {
 
 <details>
 <summary>54. Spiral Matrix</summary>
+
+**Description:** Given an m x n matrix, return all elements of the matrix in spiral order.
+
+**Example:** Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]; Output: [1,2,3,6,9,8,7,4,5]
 
 ```java
 class Solution {
@@ -930,6 +1066,10 @@ class Solution {
 
 <details>
 <summary>122. Best Time to Buy and Sell Stock II</summary>
+
+**Description:** You are given an integer array prices where prices[i] is the price of a given stock on the ith day. On each day, you may decide to buy and/or sell the stock. You can only hold at most one share of the stock at any time. However, you can buy it then immediately sell it on the same day. Find and return the maximum profit you can achieve.
+
+**Example:** Input: prices = [7,1,5,3,6,4]; Output: 7
 
 ```java
 class Solution {
@@ -1592,6 +1732,10 @@ class Solution {
 <details>
 <summary>23. Merge k Sorted Lists</summary>
 
+**Description:** You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it.
+
+**Example:** Input: lists = [[1,4,5],[1,3,4],[2,6]]; Output: [1,1,2,3,4,4,5,6]
+
 ```java
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
@@ -1622,6 +1766,10 @@ class Solution {
 
 <details>
 <summary>1392. Longest Happy Prefix</summary>
+
+**Description:** A string is called a happy prefix if is a non-empty prefix which is also a suffix (excluding itself). Given a string s, return the longest happy prefix of s. Return an empty string "" if no such prefix exists.
+
+**Example:** Input: s = "level"; Output: "l"
 
 ```java
 class Solution {
