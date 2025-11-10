@@ -1090,6 +1090,10 @@ class Solution {
 <details>
 <summary>128. Longest Consecutive Sequence</summary>
 
+**Description:** Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence. You must write an algorithm that runs in O(n) time.
+
+**Example:** Input: nums = [100,4,200,1,3,2]; Output: 4
+
 ```java
 class Solution {
     public int longestConsecutive(int[] nums) {
@@ -1122,6 +1126,10 @@ class Solution {
 <details>
 <summary>148. Sort List</summary>
 
+**Description:** Given the head of a linked list, return the list after sorting it in ascending order.
+
+**Example:** Input: head = [4,2,1,3]; Output: [1,2,3,4]
+
 ```java
 class Solution {
     public ListNode sortList(ListNode head) {
@@ -1150,6 +1158,10 @@ class Solution {
 
 <details>
 <summary>150. Evaluate Reverse Polish Notation</summary>
+
+**Description:** Evaluate the value of an arithmetic expression in Reverse Polish Notation. Valid operators are +, -, *, and /. Each operand may be an integer or another expression. Note that division between two integers should truncate toward zero. It is guaranteed that the given RPN expression is always valid. That means the expression would always evaluate to a result, and there will not be any division by zero operation.
+
+**Example:** Input: tokens = ["2","1","+","3","*"]; Output: 9
 
 ```java
 class Solution {
@@ -1180,6 +1192,10 @@ class Solution {
 <details>
 <summary>152. Maximum Product Subarray</summary>
 
+**Description:** Given an integer array nums, find a contiguous non-empty subarray within the array that has the largest product, and return the product. The test cases are generated so that the answer will fit in a 32-bit integer.
+
+**Example:** Input: nums = [2,3,-2,4]; Output: 6
+
 ```java
 class Solution {
     public int maxProduct(int[] nums) {
@@ -1205,6 +1221,10 @@ class Solution {
 
 <details>
 <summary>155. Min Stack</summary>
+
+**Description:** Design a stack that supports push, pop, top, and retrieving the minimum element in constant time. Implement the MinStack class: MinStack() initializes the stack object. void push(int val) pushes the element val onto the stack. void pop() removes the element on the top of the stack. int top() gets the top element of the stack. int getMin() retrieves the minimum element in the stack. You must implement a solution with O(1) time complexity for each function.
+
+**Example:** MinStack minStack = new MinStack(); minStack.push(-2); minStack.push(0); minStack.push(-3); minStack.getMin(); // return -3; minStack.pop(); minStack.top(); // return 0; minStack.getMin(); // return -2
 
 ```java
 class MinStack {
@@ -1244,6 +1264,10 @@ class MinStack {
 <details>
 <summary>167. Two Sum II - Input Array Is Sorted</summary>
 
+**Description:** Given a 1-indexed array of integers numbers that is already sorted in non-decreasing order, find two numbers such that they add up to a specific target number. Let these two numbers be numbers[index1] and numbers[index2] where 1 <= index1 < index2 <= numbers.length. Return the indices of the two numbers, index1 and index2, added by one as an integer array [index1, index2] of length 2. The tests are generated such that there is exactly one solution. You may not use the same element twice. Your solution must use only constant extra space.
+
+**Example:** Input: numbers = [2,7,11,15], target = 9; Output: [1,2]
+
 ```java
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
@@ -1275,6 +1299,10 @@ class Solution {
 <details>
 <summary>189. Rotate Array</summary>
 
+**Description:** Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
+
+**Example:** Input: nums = [1,2,3,4,5,6,7], k = 3; Output: [5,6,7,1,2,3,4]
+
 ```java
 class Solution {
     public void rotate(int[] nums, int k) {
@@ -1300,6 +1328,12 @@ class Solution {
 <details>
 <summary>209. Minimum Size Subarray Sum</summary>
 
+**Description:** Given an array of positive integers nums and a positive integer target, return the minimal length of a contiguous subarray [numsl, numsl+1, ..., numsr-1, numsr] of which the sum is greater than or equal to target. If there is no such subarray, return 0 instead.
+
+**Example:**  
+Input: target = 7, nums = [2,3,1,2,4,3]  
+Output: 2
+
 ```java
 class Solution {
     public int minSubArrayLen(int target, int[] nums) {
@@ -1324,6 +1358,12 @@ class Solution {
 <details>
 <summary>215. Kth Largest Element in an Array</summary>
 
+**Description:** Given an integer array nums and an integer k, return the kth largest element in the array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+
+**Example:**  
+Input: nums = [3,2,1,5,6,4], k = 2  
+Output: 5
+
 ```java
 class Solution {
     public int findKthLargest(int[] nums, int k) {
@@ -1346,6 +1386,12 @@ class Solution {
 
 <details>
 <summary>238. Product of Array Except Self</summary>
+
+**Description:** Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i]. The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer. You must write an algorithm that runs in O(n) time and without using the division operation.
+
+**Example:**  
+Input: nums = [1,2,3,4]  
+Output: [24,12,8,6]
 
 ```java
 class Solution {
@@ -1377,6 +1423,12 @@ class Solution {
 <details>
 <summary>347. Top K Frequent Elements</summary>
 
+**Description:** Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+
+**Example:**  
+Input: nums = [1,1,1,2,2,3], k = 2  
+Output: [1,2]
+
 ```java
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
@@ -1407,6 +1459,12 @@ class Solution {
 
 <details>
 <summary>621. Task Scheduler</summary>
+
+**Description:** Given a characters array tasks, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task is done in one unit of time. For each unit of time, the CPU could complete either one task or just be idle. However, there is a non-negative integer n that represents the cooldown period between two same tasks (the same letter in the array), that is that there must be at least n units of time between any two same tasks. Return the least number of units of time that the CPU will take to finish all the tasks.
+
+**Example:**  
+Input: tasks = ["A","A","A","B","B","B"], n = 2  
+Output: 8
 
 ```java
 class Solution {
@@ -1441,6 +1499,20 @@ class Solution {
 
 <details>
 <summary>622. Design Circular Queue</summary>
+
+**Description:** Design your implementation of the circular queue. The circular queue is a linear data structure in which the operations are performed based on FIFO (First In First Out) principle and the last position is connected back to the first position to make a circle. It is also called "Ring Buffer". One of the benefits of the circular queue is that we can make use of the spaces in front of the queue. In a normal queue, once the queue becomes full, we cannot insert the next element even if there is a space in front of the queue. But using the circular queue, we can use the space to store new values.
+
+**Example:**  
+MyCircularQueue circularQueue = new MyCircularQueue(3); // set the size to be 3  
+circularQueue.enQueue(1);  // return true  
+circularQueue.enQueue(2);  // return true  
+circularQueue.enQueue(3);  // return true  
+circularQueue.enQueue(4);  // return false, the queue is full  
+circularQueue.Rear();  // return 3  
+circularQueue.isFull();  // return true  
+circularQueue.deQueue();  // return true  
+circularQueue.enQueue(4);  // return true  
+circularQueue.Rear();  // return 4
 
 ```java
 class MyCircularQueue {
@@ -1497,6 +1569,12 @@ class MyCircularQueue {
 <details>
 <summary>784. Letter Case Permutation</summary>
 
+**Description:** Given a string s, we can transform every letter individually to be lowercase or uppercase to create another string. Return a list of all possible strings we could create. Return the output in any order.
+
+**Example:**  
+Input: s = "a1b2"  
+Output: ["a1b2","a1B2","A1b2","A1B2"]
+
 ```java
 class Solution {
     public List<String> letterCasePermutation(String s) {
@@ -1525,6 +1603,12 @@ class Solution {
 
 <details>
 <summary>845. Longest Mountain in Array</summary>
+
+**Description:** You may recall that an array arr is a mountain array if and only if: arr.length >= 3, there exists some index i (0-indexed) with 0 < i < arr.length - 1 such that: arr[0] < arr[1] < ... < arr[i - 1] < arr[i], arr[i] > arr[i + 1] > ... > arr[arr.length - 1]. Given an integer array arr, return the length of the longest mountain in arr. If there is no mountain, return 0.
+
+**Example:**  
+Input: arr = [2,1,4,7,3,2,5]  
+Output: 5
 
 ```java
 class Solution {
@@ -1556,6 +1640,12 @@ class Solution {
 
 <details>
 <summary>912. Sort an Array</summary>
+
+**Description:** Given an array of integers nums, sort the array in ascending order and return it. You must solve the problem without using any built-in functions in O(nlogn) time complexity and with the smallest space complexity possible.
+
+**Example:**  
+Input: nums = [5,2,3,1]  
+Output: [1,2,3,5]
 
 ```java
 class Solution {
@@ -1601,6 +1691,12 @@ class Solution {
 <details>
 <summary>973. K Closest Points to Origin</summary>
 
+**Description:** Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane and an integer k, return the k closest points to the origin (0, 0). The distance between two points on the X-Y plane is the Euclidean distance (i.e., √(x1 - x2)2 + (y1 - y2)2). You may return the answer in any order. The answer is guaranteed to be unique (except for the order that it is in).
+
+**Example:**  
+Input: points = [[1,3],[-2,2]], k = 1  
+Output: [[-2,2]]
+
 ```java
 class Solution {
     static class Point implements Comparable<Point> {
@@ -1644,6 +1740,12 @@ class Solution {
 <details>
 <summary>1004. Max Consecutive Ones III</summary>
 
+**Description:** Given a binary array nums and an integer k, return the maximum number of consecutive 1's in the array if you can flip at most k 0's.
+
+**Example:**  
+Input: nums = [1,1,1,0,0,0,1,1,1,1,0], k = 2  
+Output: 6
+
 ```java
 class Solution {
     public int longestOnes(int[] nums, int k) {
@@ -1674,6 +1776,12 @@ class Solution {
 <details>
 <summary>1186. Maximum Subarray Sum with One Deletion</summary>
 
+**Description:** Given an array of integers, return the maximum sum for a non-empty subarray (contiguous elements) with at most one element deletion. In other words, you want to choose a subarray and optionally delete one element from it so that there is still at least one element left and the sum of the remaining elements is maximum possible.
+
+**Example:**  
+Input: arr = [1,-2,0,3]  
+Output: 4
+
 ```java
 class Solution {
     public int maximumSum(int[] nums) {
@@ -1695,6 +1803,12 @@ class Solution {
 
 <details>
 <summary>2461. Maximum Sum of Distinct Subarrays With Length K</summary>
+
+**Description:** You are given an integer array nums and an integer k. Find the maximum subarray sum of all the subarrays of nums that meet the following conditions: The length of the subarray is k, and All the elements of the subarray are distinct. Return the maximum subarray sum of all the subarrays that meet the conditions. If no subarray meets the conditions, return 0.
+
+**Example:**  
+Input: nums = [1,5,4,2,9,9,9], k = 3  
+Output: 15
 
 ```java
 class Solution {
