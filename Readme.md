@@ -603,6 +603,29 @@ class Solution {
         return expectedSum - actualSum;
     }
 }
+
+class Solution {
+    public int missingNumber(int[] nums) {
+        int n = nums.length;
+        int expectedSum = n * (n + 1) / 2;  // Formula: 0+1+2+...+n
+        
+        int actualSum = 0;
+        for(int num : nums) {
+            actualSum += num;
+        }
+        
+        return expectedSum - actualSum;
+    }
+}
+class Solution {
+    public int missingNumber(int[] nums) {
+        int result = nums.length;
+        for(int i = 0; i < nums.length; i++) {
+            result = result ^ i ^ nums[i];
+        }
+        return result;
+    }
+}
 ```
 </details>
 
