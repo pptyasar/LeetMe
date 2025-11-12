@@ -13,18 +13,15 @@ Input: nums = [2,7,11,15], target = 9; Output: [0,1]
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> hMap = new HashMap<>();
-        int[] ans = new int[2];
         
         for(int i = 0; i < nums.length; i++) {
             int expectedNum = target - nums[i];
-            if(hMap.containsKey(expectedNum) && hMap.get(expectedNum) != i) {
-                ans[0] = i;
-                ans[1] = hMap.get(expectedNum);
-                break;
+            if(hMap.containsKey(expectedNum)) {
+                return new int[]{i, hMap.get(expectedNum)};
             }
             hMap.put(nums[i], i);
         }
-        return ans;
+        return new int[0];  // Or throw exception if guaranteed solution exists
     }
 }
 ```
