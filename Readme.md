@@ -102,6 +102,33 @@ class Solution {
         return aL;
     }
 }
+
+class Solution {
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+        int n = nums.length;
+        
+        // Mark present numbers by setting their index to n+1
+        for(int i = 0; i < n; i++) {
+            int index = Math.abs(nums[i]);
+            if(index <= n) {  // Only process valid numbers
+                index--;  // Convert to 0-based index
+                if(nums[index] <= n) {  // Not yet marked
+                    nums[index] += n;  // Mark by adding n
+                }
+            }
+        }
+        
+        // Collect indices where value <= n (unmarked)
+        List<Integer> result = new ArrayList<>();
+        for(int i = 0; i < n; i++) {
+            if(nums[i] <= n) {
+                result.add(i + 1);
+            }
+        }
+        
+        return result;
+    }
+}
 ```
 </details>
 
@@ -141,6 +168,29 @@ class Solution {
         return dummyNode.next;
     }
 }
+
+class Solution {
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        ListNode dummy = new ListNode(-1);
+        ListNode current = dummy;
+        
+        while(list1 != null && list2 != null) {
+            if(list1.val <= list2.val) {
+                current.next = list1;
+                list1 = list1.next;
+            } else {
+                current.next = list2;
+                list2 = list2.next;
+            }
+            current = current.next;
+        }
+        
+        // Attach remaining nodes
+        current.next = (list1 != null) ? list1 : list2;
+        
+        return dummy.next;
+    }
+}
 ```
 </details>
 
@@ -154,35 +204,29 @@ Input: haystack = "sadbutsad", needle = "sad"; Output: 0
 ```java
 class Solution {
     public int strStr(String haystack, String needle) {
-        char[] chN = needle.toCharArray();
-        int needleLength = needle.length();
-        int haystackLength = haystack.length();
+        return haystack.indexOf(needle);
+    }
+}
+
+class Solution {
+    public int strStr(String haystack, String needle) {
+        int hLen = haystack.length();
+        int nLen = needle.length();
         
-        if(needleLength > haystackLength) return -1;
+        if(nLen > hLen) return -1;
         
-        for(int i = 0; i < haystackLength - needleLength + 1; i++) {
-            char ch = haystack.charAt(i);
-            if(ch == needle.charAt(0)) {
-                int j = 0;
-                int tempStartPoint = i;
-                int tempCounter = 0;
-                while(j < needleLength) {
-                    char hayStackCha = haystack.charAt(tempStartPoint);
-                    char needleCha = needle.charAt(j);
-                    if(hayStackCha == needleCha) {
-                        tempCounter++;
-                    }
-                    j++;
-                    tempStartPoint++;
-                }
-                if(tempCounter == needleLength) {
-                    return i;
-                }
+        for(int i = 0; i <= hLen - nLen; i++) {
+            int j = 0;
+            while(j < nLen && haystack.charAt(i + j) == needle.charAt(j)) {
+                j++;
             }
+            if(j == nLen) return i;
         }
         return -1;
     }
 }
+
+
 ```
 </details>
 
@@ -234,6 +278,40 @@ class Solution {
         return maxProfit;
     }
 }
+
+class Solution {
+    public int maxProfit(int[] prices) {
+        int maxProfit = 0;
+        int minPrice = prices[0];
+        
+        for(int i = 1; i < prices.length; i++) {  // Start from 1
+            int currentPrice = prices[i];
+            maxProfit = Math.max(maxProfit, currentPrice - minPrice);
+            minPrice = Math.min(minPrice, currentPrice);
+        }
+        return maxProfit;
+    }
+}
+
+class Solution {
+    public int maxProfit(int[] prices) {
+        if(prices.length < 3) return 0;
+        
+        int maxProfit = 0;
+        int minPrice = prices[0];
+        
+        for(int i = 2; i < prices.length; i++) {
+            int currentPrice = prices[i];
+            
+            // Sell on day i (bought on day i-2 or earlier)
+            maxProfit = Math.max(maxProfit, currentPrice - minPrice);
+            
+            // Update minPrice with day i-1 (to maintain 2-day holding)
+            minPrice = Math.min(minPrice, prices[i-1]);
+        }
+        return maxProfit;
+    }
+}
 ```
 </details>
 
@@ -259,6 +337,29 @@ public class Solution {
         }
         return true;
     }
+}
+
+public boolean hasCycle(ListNode head) {
+    ListNode slow = head;
+    ListNode fast = head;
+    
+    while(fast != null && fast.next != null) {
+        slow = slow.next;
+        fast = fast.next.next;
+        if(slow == fast) return true;
+    }
+    return false;
+}
+
+public boolean hasCycle(ListNode head) {
+    HashSet<ListNode> seen = new HashSet<>();
+    
+    while(head != null) {
+        if(seen.contains(head)) return true;
+        seen.add(head);
+        head = head.next;
+    }
+    return false;
 }
 ```
 </details>
