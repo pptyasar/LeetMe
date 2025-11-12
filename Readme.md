@@ -562,6 +562,20 @@ class Solution {
         return prevNode;
     }
 }
+
+public boolean isPalindrome(ListNode head) {
+    List<Integer> vals = new ArrayList<>();
+    while(head != null) {
+        vals.add(head.val);
+        head = head.next;
+    }
+    int left = 0, right = vals.size() - 1;
+    while(left < right) {
+        if(!vals.get(left++).equals(vals.get(right--))) return false;
+    }
+    return true;
+}
+
 ```
 </details>
 
