@@ -1627,24 +1627,23 @@ Output: [24,12,8,6]
 ```java
 class Solution {
     public int[] productExceptSelf(int[] nums) {
+
         int len = nums.length;
-        int[] leftProd = new int[len];
-        int[] rightProd = new int[len];
+
         int[] ans = new int[len];
-        
-        leftProd[0] = 1;
-        for(int i = 1; i < len; i++) {
-            leftProd[i] = leftProd[i - 1] * nums[i - 1];
-        }
-        
-        rightProd[len - 1] = 1;
-        for(int i = len - 2; i >= 0; i--) {
-            rightProd[i] = rightProd[i + 1] * nums[i + 1];
-        }
-        
-        for(int i = 0; i < len; i++) {
-            ans[i] = rightProd[i] * leftProd[i];
-        }
+
+        ans[0] = 1;
+        for(int i=1; i<len; i++){
+            ans[i] = ans[i-1] * nums[i-1];
+        }  
+
+        int suffix = 1;
+        for(int j=len-1; j>=0; j--){
+            ans[j] = ans[j] * suffix;
+            suffix *= nums[j];
+        } 
+
+       
         return ans;
     }
 }
