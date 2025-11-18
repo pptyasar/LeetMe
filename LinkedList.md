@@ -400,6 +400,38 @@ Input: lists = [[1,4,5],[1,3,4],[2,6]]; Output: [1,1,2,3,4,4,5,6]
 ```java
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
+        
+        if (lists == null || lists.length == 0) return null;
+
+        PriorityQueue<ListNode> pq = new PriorityQueue<>((node1,node2)-> Integer.compare(node1.val,node2.val));
+
+
+        for(ListNode l: lists){
+           if (l != null) {
+            pq.offer(l);
+           }
+        }
+
+
+        ListNode dummy = new ListNode(-1);
+        ListNode current = dummy;
+        while(!pq.isEmpty()){
+
+            ListNode poll = pq.poll();
+
+            current.next = poll;
+            current = current.next;
+
+            if(poll.next != null){
+                pq.offer(poll.next);
+            }
+        }   
+
+        return dummy.next;
+    }
+}
+class Solution {
+    public ListNode mergeKLists(ListNode[] lists) {
         ArrayList<Integer> arrList = new ArrayList<>();
         
         for(ListNode ln: lists) {
