@@ -372,6 +372,29 @@ Given the head of a linked list and an integer val, remove all the nodes of the 
 Input: head = [1,2,6,3,4,5,6], val = 6; Output: [1,2,3,4,5]
 
 ```java
+
+class Solution {
+    public ListNode removeElements(ListNode head, int val) {
+
+        ListNode dummy = new ListNode(-1);
+        ListNode current = dummy;
+
+        while(head != null){
+
+            if(head.val != val){
+                current.next = head;
+                current = current.next;
+            } 
+
+            head = head.next;
+        }
+
+        current.next = null;
+
+        return dummy.next;
+    }
+}
+
 class Solution {
     public ListNode removeElements(ListNode head, int val) {
         ListNode curr = head;
