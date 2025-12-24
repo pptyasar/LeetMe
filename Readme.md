@@ -3,7 +3,7 @@
 ## Easy Problems
 
 <details>
-<summary>1. Two Sum</summary>
+<summary>1. Two Sum 🎯 </summary>
 
 Given an array of integers and a target sum, find the indices of two numbers that add up to the target.
 
@@ -28,7 +28,7 @@ class Solution {
 </details>
 
 <details>
-<summary>20. Valid Parentheses</summary>
+<summary>20. Valid Parentheses </summary>
 
 Determine if a string containing only parentheses is valid, meaning every opening bracket has a matching closing bracket in the correct order.
 
@@ -1086,7 +1086,7 @@ public class Solution {
 ## Medium Problems 
 
 <details>
-<summary>3. Longest Substring Without Repeating Characters</summary>
+<summary>3. Longest Substring Without Repeating Characters 🎯</summary>
 
 Given a string s, find the length of the longest substring without repeating characters.
 
@@ -1299,7 +1299,7 @@ class Solution {
 </details>
 
 <details>
-<summary>128. Longest Consecutive Sequence</summary>
+<summary>128. Longest Consecutive Sequence  🎯 </summary>
 
 Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence. You must write an algorithm that runs in O(n) time.
 
