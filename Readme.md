@@ -1084,6 +1084,132 @@ public class Solution {
 </details>
 
 ## Medium Problems 
+<details>
+<summary>647. Palindromic Substrings 🎯</summary>
+Given a string s, return the number of palindromic substrings in it.
+
+A string is a palindrome when it reads the same backward as forward.
+
+A substring is a contiguous sequence of characters within the string.
+
+ 
+
+Example 1:
+
+Input: s = "abc"
+Output: 3
+Explanation: Three palindromic strings: "a", "b", "c".
+Example 2:
+
+Input: s = "aaa"
+Output: 6
+Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
+
+
+```java
+class Solution {
+    public int countSubstrings(String s) {
+        int count = 0;
+
+        // Loop through each character as a potential center
+        for (int i = 0; i < s.length(); i++) {
+
+            // Case 1: Odd-length palindromes (center at i)
+            count += expandFromCenter(s, i, i);
+
+            // Case 2: Even-length palindromes (center between i and i+1)
+            count += expandFromCenter(s, i, i + 1);
+        }
+
+        return count;
+    }
+
+    // Expand around the center and count palindromes
+    private int expandFromCenter(String s, int left, int right) {
+        int localCount = 0;
+
+        // Expand while valid and palindrome condition holds
+        while (left >= 0 && right < s.length()
+                && s.charAt(left) == s.charAt(right)) {
+
+            // Each successful expansion forms a palindrome
+            localCount++;
+
+            // Move outward
+            left--;
+            right++;
+        }
+
+        return localCount;
+    }
+}
+```
+</details>
+<details>
+<summary>5. Longest Palindromic Substring 🎯</summary>
+Given a string s, return the longest palindromic substring in s.
+
+ 
+
+Example 1:
+
+Input: s = "babad"
+Output: "bab"
+Explanation: "aba" is also a valid answer.
+Example 2:
+
+Input: s = "cbbd"
+Output: "bb"
+
+```java
+class Solution {
+    public String longestPalindrome(String s) {
+        // Edge case: empty or single character string
+        if (s == null || s.length() < 2) return s;
+
+        int start = 0;   // starting index of longest palindrome
+        int end = 0;     // ending index of longest palindrome
+
+        // Loop through each character as a possible center
+        for (int i = 0; i < s.length(); i++) {
+
+            // Case 1: Odd-length palindrome (center at i)
+            int len1 = expandFromCenter(s, i, i);
+
+            // Case 2: Even-length palindrome (center between i and i+1)
+            int len2 = expandFromCenter(s, i, i + 1);
+
+            // Take the longer palindrome from both cases
+            int len = Math.max(len1, len2);
+
+            // Update global start and end if longer palindrome is found
+            if (len > end - start) {
+                // i is the center, so compute new boundaries
+                start = i - (len - 1) / 2;
+                end = i + len / 2;
+            }
+        }
+
+        // Extract the longest palindromic substring
+        return s.substring(start, end + 1);
+    }
+
+    // Helper method to expand around a given center
+    private int expandFromCenter(String s, int left, int right) {
+
+        // Expand while boundaries are valid and characters match
+        while (left >= 0 && right < s.length()
+                && s.charAt(left) == s.charAt(right)) {
+            left--;
+            right++;
+        }
+
+        // Length of palindrome = right - left - 1
+        return right - left - 1;
+    }
+}
+```
+</details>
 
 <details>
 <summary>3. Longest Substring Without Repeating Characters 🎯</summary>
