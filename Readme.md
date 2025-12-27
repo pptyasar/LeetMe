@@ -1084,6 +1084,119 @@ public class Solution {
 </details>
 
 ## Medium Problems 
+
+<details>
+<summary>139. Word Break 🎯</summary>
+Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words.
+
+Note that the same word in the dictionary may be reused multiple times in the segmentation.
+
+ 
+
+Example 1:
+
+Input: s = "leetcode", wordDict = ["leet","code"]
+Output: true
+Explanation: Return true because "leetcode" can be segmented as "leet code".
+Example 2:
+
+Input: s = "applepenapple", wordDict = ["apple","pen"]
+Output: true
+Explanation: Return true because "applepenapple" can be segmented as "apple pen apple".
+Note that you are allowed to reuse a dictionary word.
+Example 3:
+
+Input: s = "catsandog", wordDict = ["cats","dog","sand","and","cat"]
+Output: false
+
+```java
+class Solution {
+    public boolean wordBreak(String s, List<String> wordDict) {
+        Set<String> set = new HashSet<>(wordDict);
+        boolean dp[] = new boolean[s.length()+1];
+
+        dp[0] = true;
+
+        for(int i=1; i<= s.length(); i++){
+
+            for(int j=0; j<i; j++){
+
+                if(
+                    dp[j] &&
+                    set.contains(s.substring(j,i))
+                ){
+
+                    dp[i] = true;
+                    break;
+
+                }
+
+            }
+
+        }
+
+        return dp[s.length()];
+
+    }
+}
+```
+</details>
+
+<details>
+<summary>11. Container With Most Water 🎯</summary>
+You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
+
+Find two lines that together with the x-axis form a container, such that the container contains the most water.
+
+Return the maximum amount of water a container can store.
+
+Notice that you may not slant the container.
+
+Input: height = [1,8,6,2,5,4,8,3,7]
+Output: 49
+Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
+Example 2:
+
+Input: height = [1,1]
+Output: 1
+
+
+```java
+class Solution {
+    public int maxArea(int[] height) {
+        int len = height.length;
+
+        int leftPointer = 0, rightPointer = len - 1;
+
+        int maxCont = 0;
+        while (leftPointer < rightPointer) {
+
+            int leftVal = height[leftPointer];
+            int rightVal = height[rightPointer];
+            int tempCount = 0;
+            if (leftVal < rightVal) {
+
+                int dist = rightPointer - leftPointer;
+                tempCount = dist * leftVal;
+
+                leftPointer++;
+            } else {
+                int dist = rightPointer - leftPointer;
+                tempCount = dist * rightVal;
+
+                rightPointer--;
+            }
+
+            maxCont = Math.max(maxCont, tempCount);
+        }
+
+        return maxCont;
+    }
+
+}
+```
+</details>
+
 <details>
 <summary>647. Palindromic Substrings 🎯</summary>
 Given a string s, return the number of palindromic substrings in it.
