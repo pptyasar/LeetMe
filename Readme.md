@@ -1,5 +1,7 @@
 # Complete List of All 57 LeetCode Problems
 
+🎯 - Blind 75
+
 ## Easy Problems
 
 <details>
@@ -27,8 +29,52 @@ class Solution {
 ```
 </details>
 
+
 <details>
-<summary>20. Valid Parentheses </summary>
+<summary>242. Valid Anagram 🎯 </summary>
+
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+Example 1:
+
+Input: s = "anagram", t = "nagaram"
+
+Output: true
+
+Example 2:
+
+Input: s = "rat", t = "car"
+
+Output: false
+
+```java
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
+        
+        int[] count = new int[26];  // For lowercase letters
+        
+        for (int i = 0; i < s.length(); i++) {
+            count[s.charAt(i) - 'a']++;
+            count[t.charAt(i) - 'a']--;
+        }
+        
+        for (int c : count) {
+            if (c != 0) {
+                return false;
+            }
+        }
+        
+        return true;
+    }
+}
+```
+</details>
+
+<details>
+<summary>20. Valid Parentheses 🎯</summary>
 
 Determine if a string containing only parentheses is valid, meaning every opening bracket has a matching closing bracket in the correct order.
 
@@ -255,7 +301,7 @@ class Solution {
 </details>
 
 <details>
-<summary>121. Best Time to Buy and Sell Stock</summary>
+<summary>121. Best Time to Buy and Sell Stock 🎯</summary>
 
 You are given an array prices where prices[i] is the price of a given stock on the ith day. You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 
@@ -316,7 +362,7 @@ class Solution {
 </details>
 
 <details>
-<summary>141. Linked List Cycle</summary>
+<summary>141. Linked List Cycle 🎯</summary>
 
 Given head, the head of a linked list, determine if the linked list has a cycle in it.
 
@@ -337,6 +383,28 @@ public class Solution {
         }
         return true;
     }
+}
+
+public boolean hasCycle(ListNode head) {
+
+        if (head == null) {
+            return false;
+        }
+
+        ListNode slow = head;
+        ListNode fast = head.next;
+
+        while (fast != null && fast.next != null) {
+
+            if (slow == fast) {
+                return true;
+            }
+
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        return false;
 }
 
 public boolean hasCycle(ListNode head) {
@@ -471,7 +539,7 @@ class Solution {
 </details>
 
 <details>
-<summary>217. Contains Duplicate</summary>
+<summary>217. Contains Duplicate 🎯</summary>
 
 Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
@@ -604,7 +672,7 @@ class Solution {
 </details>
 
 <details>
-<summary>268. Missing Number</summary>
+<summary>268. Missing Number 🎯</summary>
 
 Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
 
@@ -1352,7 +1420,7 @@ class Solution {
 </details>
 
 <details>
-<summary>15. 3Sum</summary>
+<summary>15. 3Sum 🎯</summary>
 
 Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0. Notice that the solution set must not contain duplicate triplets.
 
@@ -1447,7 +1515,7 @@ class Solution {
 </details>
 
 <details>
-<summary>53. Maximum Subarray</summary>
+<summary>53. Maximum Subarray 🎯</summary>
 
 Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
 
@@ -1878,7 +1946,7 @@ class Solution {
 </details>
 
 <details>
-<summary>238. Product of Array Except Self</summary>
+<summary>238. Product of Array Except Self 🎯</summary>
 
 Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i]. The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer. You must write an algorithm that runs in O(n) time and without using the division operation.
 
