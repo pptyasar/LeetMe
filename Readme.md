@@ -4,6 +4,31 @@
 
 ## Easy Problems
 
+public static long maxProfit(List<Long> prices) {
+
+    if (prices == null || prices.size() < 6) {
+        return 0;
+    }
+
+    long maxProfit = 0;
+
+    // This will track the minimum price among valid buy days
+    long minBuyPrice = Long.MAX_VALUE;
+
+    for (int i = 5; i < prices.size(); i++) {
+
+        // Day (i - 5) just became a valid buy day
+        minBuyPrice = Math.min(minBuyPrice, prices.get(i - 5));
+
+        // Try selling on day i
+        long profit = prices.get(i) - minBuyPrice;
+        maxProfit = Math.max(maxProfit, profit);
+    }
+
+    return maxProfit;
+}
+
+
 <details>
 <summary>1. Two Sum 🎯 </summary>
 
@@ -277,7 +302,7 @@ class Solution {
 </details>
 
 <details>
-<summary>70. Climbing Stairs</summary>
+<summary>70. Climbing Stairs 🎯</summary>
 
 You are climbing a staircase. It takes n steps to reach the top. Each time you can climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 
@@ -1366,8 +1391,11 @@ class Solution {
             // Update global start and end if longer palindrome is found
             if (len > end - start) {
                 // i is the center, so compute new boundaries
-                start = i - (len - 1) / 2;
-                end = i + len / 2;
+                int leftOffset  = (len - 1) / 2;
+                int rightOffset = len / 2;
+
+                start = i - leftOffset;
+                end   = i + rightOffset;
             }
         }
 
@@ -1979,6 +2007,59 @@ class Solution {
 }
 ```
 </details>
+
+<details>
+<summary>49. Group Anagrams 🎯 </summary>
+
+
+Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+
+Example 1:
+Input: strs = ["eat","tea","tan","ate","nat","bat"]
+Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+Explanation:
+
+There is no string in strs that can be rearranged to form "bat".
+The strings "nat" and "tan" are anagrams as they can be rearranged to form each other.
+The strings "ate", "eat", and "tea" are anagrams as they can be rearranged to form each other.
+
+Example 2:
+Input: strs = [""]
+Output: [[""]]
+
+Example 3:
+Input: strs = ["a"]
+Output: [["a"]]
+
+```java
+class Solution {
+    public List<List<String>> groupAnagrams(String[] strs) {
+
+        Map<String, List<String>> hMap = new HashMap<>();
+
+        for (String st : strs) {
+
+            char[] chArr = st.toCharArray();
+
+            Arrays.sort(chArr);
+
+            String key = new String(chArr);
+
+            if (!hMap.containsKey(key)) {
+                hMap.put(key, new ArrayList<>());
+            }
+
+            hMap.get(key).add(st);
+        }
+
+        return new ArrayList<>(hMap.values());
+
+    }
+}
+```
+</details>
+
 
 <details>
 <summary>347. Top K Frequent Elements</summary>
