@@ -4,31 +4,51 @@
 
 ## Easy Problems
 
-public static long maxProfit(List<Long> prices) {
 
-    if (prices == null || prices.size() < 6) {
-        return 0;
+
+<details>
+<summary>1. Maximum Profit with Minimum 5-Day Holding Constraint  </summary>
+
+    You are given a list of stock prices where prices[i] represents the price of a stock on the i-th day.
+
+    You are allowed to perform at most one transaction (buy once and sell once), with the following constraint:
+
+    You must hold the stock for at least 5 days before selling.
+    In other words, if you buy on day i, you can only sell on day j where j ≥ i + 5.
+
+    Return the maximum profit you can achieve.
+    If no profit is possible, return 0.
+
+    Input:    prices = [10, 7, 5, 8, 11, 9, 6, 20]
+    Output:   15
+
+    ```java
+    public static long maxProfit(List<Long> prices) {
+
+        if (prices == null || prices.size() < 6) {
+            return 0;
+        }
+
+        long maxProfit = 0;
+
+        // This will track the minimum price among valid buy days
+        long minBuyPrice = Long.MAX_VALUE;
+
+        for (int i = 5; i < prices.size(); i++) {
+
+            // Day (i - 5) just became a valid buy day
+            minBuyPrice = Math.min(minBuyPrice, prices.get(i - 5));
+
+            // Try selling on day i
+            long profit = prices.get(i) - minBuyPrice;
+            maxProfit = Math.max(maxProfit, profit);
+        }
+
+        return maxProfit;
     }
+    ```
 
-    long maxProfit = 0;
-
-    // This will track the minimum price among valid buy days
-    long minBuyPrice = Long.MAX_VALUE;
-
-    for (int i = 5; i < prices.size(); i++) {
-
-        // Day (i - 5) just became a valid buy day
-        minBuyPrice = Math.min(minBuyPrice, prices.get(i - 5));
-
-        // Try selling on day i
-        long profit = prices.get(i) - minBuyPrice;
-        maxProfit = Math.max(maxProfit, profit);
-    }
-
-    return maxProfit;
-}
-
-
+</detail>
 <details>
 <summary>1. Two Sum 🎯 </summary>
 
